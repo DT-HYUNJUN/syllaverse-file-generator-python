@@ -140,7 +140,7 @@ try:
         for i in folder_example:
             url = i[2]
             driver.get(url)
-            input_file_name = i[0] + '_input.txt'
+            input_file_name = 'input_' +  i[0] + '.txt'
             sample = driver.find_element(By.ID, 'sample-input-1').text
             f = open(dirs_example + '/' + input_file_name, 'w')
             f.write(sample)
@@ -151,7 +151,7 @@ try:
         for i in folder_practice:
             url = i[2]
             driver.get(url)
-            input_file_name = i[0] + '_input.txt'
+            input_file_name = 'input_' +  i[0] + '.txt'
             sample = driver.find_element(By.ID, 'sample-input-1').text
             f = open(dirs_practice + '/' + input_file_name, 'w')
             f.write(sample)
@@ -178,7 +178,7 @@ try:
         for i in folder_example:
             url = i[2]
             driver.get(url)
-            input_file_name = i[0] + '_input.txt'
+            input_file_name = 'input_' +  i[0] + '.txt'
             sample = driver.find_element(By.ID, 'sample-input-1').text
             f = open(dirs_example + '/' + input_file_name, 'w')
             f.write(sample)
@@ -211,7 +211,7 @@ except:
         for i in folder_practice:
             # ex) '5678_뺄셈.py' 파일 생성 / 파일 안에 ex) '# 5678 뺄셈 <문제링크>' 작성            
             code = "\nimport sys\nsys.stdin = open('" './'+ dirs_practice + '/' + 'input_' + str(i[0]) + ".txt', 'r', encoding='UTF-8')"
-            file_name = i[0] + '_' + i[1] + '.py'            
+            file_name = i[0] + '_' + i[1] + '.py'
             write_file = '# ' + i[0] + ' ' + i[1] + ' ' + i[2] + code
             f = open(dirs_practice + '/' + file_name, 'w', encoding='UTF-8')
             f.write(write_file)
