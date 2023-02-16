@@ -1,10 +1,10 @@
-# Syllaverse 문제 파일 생성기
+# 💻Syllaverse 문제 파일 생성기
 
-## 개발환경
+## 📍개발환경
 - 언어 : Python
 - 라이브러리 : beautifulsoup4, selenium, webdriver_manager
 
-## 프로젝트 설명
+## 📍프로젝트 설명
 
 교육중에 게시판에 올라오는 예제/실습 문제 파일을 만들기 번거로워서 만들기 시작했다.
 
@@ -32,7 +32,7 @@ YYMMDD
     └── ...
 ```
 
-## 사용법
+## 📍사용법
 
 3가지 라이브러리를 설치한 후 
 
@@ -56,7 +56,7 @@ python syllaverse_file_generator.py
 
 
 
-## 후기
+## 📍후기
 
 개발 과정에서 `element`가 없을 때를 처리하는 과정에서 시간이 걸렸다.
 
